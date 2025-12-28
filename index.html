@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header class="relative right-0 text-white ">
+        <div class="w-full h-full col-span-full object-cover absolute z-0">
+            <img src="./images/hero-bg.jpg" alt="Image de burger et frites" class="w-full h-full object-cover">
+        </div>
+        <input type="checkbox" id="toggle-menu" class="peer/navbar z-50 cursor-pointer" hidden>
+        <nav class="flex justify-between items-center container mx-auto p-4 z-50 w-full absolute top-0 right-0 left-0">
+            <a href="#" class="font-dancing text-3xl hover:text-orange-300 transition-colors">Feane</a>
+            <ul class="lg:flex hidden items-center gap-8 uppercase">
+               <li><a href="#" class="text-orange-300">home</a></li>
+                <li><a href="./src/pages/menu.html" class="hover:text-orange-300 transition-colors">menu</a></li>
+                <li><a href="./src/pages/about.html" class="hover:text-orange-300 transition-colors">about</a></li>
+                <li><a href="./src/pages/book_table.html" class="hover:text-orange-300 transition-colors">book table</a></li>
+            </ul>
+            <ul class="lg:flex hidden items-center gap-6">
+                <li><a href="#"><i class="fa-solid fa-user hover:text-orange-300 transition-colors"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping hover:text-orange-300 transition-colors"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass hover:text-orange-300 transition-colors"></i></a></li>
+                <li><a href="#" class="bg-orange-300 rounded-full py-2 px-6 hover:bg-orange-400 transition-colors">Order Online</a></li>
+            </ul>
+            <label for="toggle-menu" class="lg:hidden"><i class="fa-solid fa-bars text-3xl"></i></label>
+        </nav>
+        <!-- Menu Mobile -->
+        <div class="transform duration-500 ease-in-out h-0 overflow-hidden -translate-y-full opacity-0 lg:hidden w-full peer-checked/navbar:translate-y-0 peer-checked/navbar:opacity-100 peer-checked/navbar:h-fit pt-20">
+            <div class="flex flex-col items-center justify-center h-fit p-8">
+                <ul class="flex flex-col items-center gap-4 uppercase text-lg">
+                    <li><a href="#" class="hover:text-orange-300 transition-colors">home</a></li>
+                    <li><a href="./src/pages/menu.html" class="hover:text-orange-300 transition-colors">menu</a></li>
+                    <li><a href="./src/pages/about.html" class="hover:text-orange-300 transition-colors">about</a></li>
+                    <li><a href="./src/pages/book_table.html" class="hover:text-orange-300 transition-colors">book table</a></li>
+                    <li class="mt-8">
+                        <ul class="flex items-center gap-6">
+                            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="bg-orange-300 hover:bg-orange-400 rounded-full py-2 px-6 transition-colors text-white">Order Online</a></li>
+                </ul>
+            </div>
+        </div>
+        <section id="hero" class="min-h-[60vh] lg:min-h-screen w-full grid grid-cols-1">
+            <div class="container group mx-auto p-4 col-span-full row-start-1 col-start-1 z-10 h-fit self-center flex flex-col gap-24">
+                <input type="radio" name="textSlider" id="textSlider1" class="peer/slide1 hidden" checked>
+                <input type="radio" name="textSlider" id="textSlider2" class="peer/slide2 hidden">
+                <input type="radio" name="textSlider" id="textSlider3" class="peer/slide3 hidden">
+                <div class="w-full overflow-hidden">
+                    <div class="flex items-center transform transition-all duration-1000 group-has-[#textSlider1:checked]:translate-x-0 group-has-[#textSlider2:checked]:-translate-x-1/2 group-has-[#textSlider3:checked]:-translate-x-full">
+                        <div class="min-w-full mr-1">
+                            <div class="flex flex-col gap-4 text-white max-w-2xl">
+                                <h2 class="capitalize font-dancing text-6xl">fast food restaurant</h2>
+                                <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo earum consequuntur impedit, nesciunt delectus dicta aut id neque soluta, aliquam illo recusandae adipisci vero, iste tenetur. Eaque amet placeat natus.</p>
+                                <a href="#" class="bg-orange-300 rounded-full py-2 w-42 text-center capitalize">order now</a>
+                            </div>
+                        </div>      
+                        <div class="min-w-full mr-1">
+                            <div class="flex flex-col gap-4 text-white max-w-2xl">
+                                <h2 class="capitalize font-dancing text-6xl">Delicuis Burger</h2>
+                                <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo earum consequuntur impedit, nesciunt delectus dicta aut id neque soluta, aliquam illo recusandae adipisci vero, iste tenetur. Eaque amet placeat natus.</p>
+                                <a href="#" class="bg-orange-300 rounded-full py-2 w-42 text-center capitalize">order now</a>
+                            </div>
+                        </div>      
+                        <div class="min-w-full">
+                            <div class="flex flex-col gap-4 text-white max-w-2xl">
+                                <h2 class="capitalize font-dancing text-6xl">Tasty Pizzas</h2>
+                                <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo earum consequuntur impedit, nesciunt delectus dicta aut id neque soluta, aliquam illo recusandae adipisci vero, iste tenetur. Eaque amet placeat natus.</p>
+                                <a href="#" class="bg-orange-300 rounded-full py-2 w-42 text-center capitalize">order now</a>
+                            </div>
+                        </div>      
+                    </div>
+                </div>          
+                <div class="flex gap-4 items-center">
+                    <label for="textSlider1" class="bg-white rounded-full size-3 group-has-[#textSlider1:checked]:scale-110 group-has-[#textSlider1:checked]:bg-orange-300 cursor-pointer transition-all duration-300"></label>
+                    <label for="textSlider2" class="bg-white rounded-full size-3 group-has-[#textSlider2:checked]:scale-110 group-has-[#textSlider2:checked]:bg-orange-300 cursor-pointer transition-all duration-300"></label>
+                    <label for="textSlider3" class="bg-white rounded-full size-3 group-has-[#textSlider3:checked]:scale-110 group-has-[#textSlider3:checked]:bg-orange-300 cursor-pointer transition-all duration-300"></label>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <main class="flex flex-col gap-6 lg:gap-12">
+        <section class="w-full">
+            <div class="container mx-auto p-4 grid justify-center gap-4 grid-cols-1 md:grid-cols-2">
+                <div class="p-4 flex items-center gap-4 bg-slate-900 rounded-lg group">
+                    <div class="size-32 sm:size-42 rounded-full border-4 border-orange-300 overflow-hidden">
+                        <img src="./images/o1.jpg" alt=""
+                            class="w-full h-full object-cover object-center duration-500 group-hover:scale-110 transition-all">
+                    </div>
+                    <div class="text-white flex flex-col gap-2 justify-center">
+                        <p class="font-dancing text-2xl">Thasty Thursdays</p>
+                        <p class="font-dancing text-md"><span class="text-4xl font-medium">20%</span> off</p>
+                        <a href="#" class="bg-orange-300 rounded-full py-1.5 px-4 font-medium text-center capitalize">order now <i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="p-4 flex items-center gap-4 bg-slate-900 rounded-lg group">
+                    <div class="size-32 sm:size-42 rounded-full border-4 border-orange-300 overflow-hidden">
+                        <img src="./images/o2.jpg" alt=""
+                            class="w-full h-full object-cover object-center duration-500 group-hover:scale-110 transition-all">
+                    </div>
+                    <div class="text-white flex flex-col gap-2 justify-center">
+                        <p class="font-dancing text-2xl">Thasty Thursdays</p>
+                        <p class="font-dancing text-md"><span class="text-4xl font-medium">20%</span> off</p>
+                        <a href="#" class="bg-orange-300 rounded-full py-1.5 px-4 font-medium text-center capitalize">order now <i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section du menu -->
+        <section class="container mx-auto lg:mt-20">
+            <div class="container mx-auto flex flex-col gap-4 p-4">
+                <div class="w-full flex items-center justify-center">
+                    <h2 class="font-dancing text-4xl">Our Menu</h2>
+                </div>
+                <div class="w-full flex items-center justify-center gap-4">
+                    <a href="" class="py-1 px-6 rounded-full
+                     bg-slate-900 text-white">All</a><a href="">Burger</a><a href="">Pizza</a><a href="">Pasta</a><a
+                        href="">Fries</a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="bg-gray-200  h-52 rounded-bl-4xl flex items-center justify-center w-full p-10 relative z-10 -mb-12">
+                            <img src="./images/f1.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Delicious Pizzas</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$20</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f2.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Delicious Burger</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$15</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f3.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Delicious Pizzas</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$17</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f4.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Delicious Pasta</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$18</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f5.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">French Fries</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$10</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f6.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Delicious Pizzas</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$15</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f7.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Tasty Burger</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$12</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f8.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Tasty Burger</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$14</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col relative rounded-lg overflow-hidden group">
+                        <div
+                            class="w-full h-52 bg-gray-200 rounded-bl-4xl flex items-center justify-center p-10 relative z-10 -mb-12">
+                            <img src="./images/f9.png" alt="" class="w-44 transition-all duration-300 group-hover:scale-110">
+                        </div>
+
+                        <div class="bg-slate-900 text-white p-4 pt-16 flex flex-col gap-4">
+                            <p class="text-xl font-semibold">Delicious Pasta</p>
+                            <p class="w-full text-xm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Mollitia, saepe. Quidem voluptatem, praesentium earum voluptates maxime deserunt
+                                exercitationem.</p>
+                            <div class="flex justify-between mt-4 items-center">
+                                <p>$10</p>
+                                <div
+                                    class="text-white w-8 h-8 bg-orange-300 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center p-4">
+                    <button class="py-2 px-4 bg-orange-300 text-white rounded-[100px]">View more</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Information A propos -->
+        <section class="mt-10 bg-slate-900">
+            <div
+                class="container mx-auto m-auto flex gap-10 p-8 flex-col-reverse lg:flex-row items-center justify-center text-white">
+                <img src="./images/about-img.png" alt="" class="w-80">
+                <div class="flex flex-col items-center lg:items-start gap-4">
+                    <h2 class="font-dancing text-4xl font-bold mb-5">We are Feane</h2>
+                    <p class="text-center lg:text-left">There are many variations of passages of Lorem
+                        Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour, or randomised words
+                        which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                        need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+                    <div class="flex items-center">
+                        <button class="py-2 px-6 bg-orange-300 text-white rounded-3xl">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+         <section class="mt-10">
+            <div class="container mx-auto p-8">
+                <h2 class="font-dancing text-5xl mb-10">Book Table</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div>
+                        <form action="" class="flex flex-col gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full border-2 p-2 rounded-md placeholder:text-black">
+                            <input type="tel" placeholder="Your Number" class="w-full border-2 p-2 rounded-md placeholder:text-black">
+                            <input type="email" placeholder="Your Email" class="w-full border-2 p-2 rounded-md placeholder:text-black">
+                            <select name="" id="" class="w-full border-2 p-2 rounded-md">
+                                <option value="" class="bg-neutral-400">How many persons?</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                            <input type="date" name="" id="" class="w-full border-2 p-2 rounded-md">
+                            <div class="flex justify-center items-center p-4">
+                                <button class="py-2 px-4 bg-orange-300 text-white rounded-[100px]">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6829.03985002693!2d2.128275192427495!3d13.522214952929957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11d07544b60e4aa9%3A0x95b909c768fff014!2sGrande%20Mosqu%C3%A9e%20de%20Niamey!5e1!3m2!1sfr!2sne!4v1765817056988!5m2!1sfr!2sne"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full h-[350px] "></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+         <section class=" mt-10">
+            <div class="container mx-auto p-8">
+                <div class="flex w-full justify-center mb-10">
+                    <h2 class="font-dancing text-5xl">What Says Our Customers</h2>
+                </div>
+
+                <div class="relative overflow-hidden">
+                    <div class="flex gap-4 transition-transform duration-500 ease-in-out">
+                        <div class="testi-card flex-none w-full md:w-[calc(50%-8px)] flex flex-col gap-8">
+                            <div class="bg-slate-900 text-white p-8 flex flex-col gap-4 rounded-lg">
+                                <p class="text-xm text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Expedita harum reiciendis atque adipisci enim temporibus quos aut voluptate,
+                                    accusantium quas architecto, aperiam nemo rem alias eaque quisquam corporis quia
+                                    tenetur.</p>
+                                <p class="text-xl font-bold">Moana Michell</p>
+                                <p class="text-sm text-gray-300">Customers</p>
+                            </div>
+                            <div
+                                class="w-28 h-28 bg-orange-300 transform rotate-44 border-2 rounded-b-full rounded-tr-full flex items-center justify-center ml-10">
+                                <div class="bg-white rounded-full w-24 h-24 overflow-hidden border-2  transform -rotate-44">
+                                    <img src="./images/client1.jpg" alt="" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testi-card flex-none w-full md:w-[calc(50%-8px)] flex flex-col gap-8">
+                            <div class="bg-slate-900 text-white p-8 flex flex-col gap-4 rounded-lg">
+                                <p class="text-xm text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Velit explicabo reprehenderit dignissimos nisi est odit. Sequi molestias
+                                    repellat rem delectus quae, corrupti ea, inventore tempore illo voluptatibus
+                                    quisquam incidunt cumque?</p>
+                                <p class="text-xl font-bold">Mike Hamell</p>
+                                <p class="text-sm text-gray-300">Customers</p>
+                            </div>
+                            <div
+                                class="w-28 h-28 bg-orange-300 transform rotate-44 border-2 rounded-b-full rounded-tr-full flex items-center justify-center ml-10">
+                                <div class="bg-white rounded-full w-24 h-24 overflow-hidden border-2  transform -rotate-44">
+                                    <img src="./images/client2.jpg" alt="" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex justify-center gap-3 mt-10">
+                    <label for="testiPrevBtn"
+                        class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-300 hover:bg-orange-400 text-white transition-all transform translate-x-0 shadow-md duration-200 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </label>
+                    <label for="testiNextBtn"
+                        class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-300 hover:bg-orange-400 text-white transition-all shadow-md duration-200 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="bg-slate-900">
+            <div class="container mx-auto p-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 text-white gap-10">
+                    <div class="flex flex-col gap-4 items-center">
+                        <div>
+                            <p class="text-4xl font-dancing">contact Us</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 text-gray-300">
+                            <div class="flex items-center gap-2 hover:text-yellow-500 cursor-pointer"><i
+                                    class="fa-solid fa-location-dot"></i>
+                                <p>Location</p>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-yellow-500 cursor-pointer"><i
+                                    class="fa-solid fa-phone"></i>
+                                <p>Call +01 1234567890</p>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-yellow-500 cursor-pointer"><i
+                                    class="fa-solid fa-envelope"></i>
+                                <p>demo@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4 items-center">
+                        <div>
+                            <p class="text-4xl font-dancing">Feane</p>
+                        </div>
+
+                        <div class="text-gray-300">
+                            <p class="text-center">Necessary, making this the first true generator on the Internet. It
+                                uses a dictionary
+                                of over 200 Latin words, combined with</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center justify-center text-slate-900 w-10 h-10 bg-white rounded-full hover:text-orange-300 transition-all duration-200">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="flex items-center justify-center text-slate-900 w-10 h-10 bg-white rounded-full hover:text-orange-300 transition-all duration-200">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="flex items-center justify-center text-slate-900 w-10 h-10 bg-white rounded-full hover:text-orange-300 transition-all duration-200">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="flex items-center justify-center text-slate-900 w-10 h-10 bg-white rounded-full hover:text-orange-300 transition-all duration-200">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="flex items-center justify-center text-slate-900 w-10 h-10 bg-white rounded-full hover:text-orange-300 transition-all duration-200">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 items-center">
+                        <div>
+                            <p class="text-4xl font-dancing">Opening Hours</p>
+                        </div>
+
+                        <div class="text-gray-300">
+                            <p class="text-center">Everyday</p>
+                        </div>
+                        <div class="text-gray-300">
+                            <p class="text-center">10:00 AM - 10:00 PM</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="flex flex-col items-center justify-center text-white mt-10">
+                    <p>&copy; 2025 All Rights Reserved By Free Html Templates</p>
+                    <p>&copy; Distributed By Code Runner</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
