@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.18"
+    "@tailwindcss/cli": "^4.2.4"
   },
   "name": "restaurant",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
