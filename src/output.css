@@ -761,6 +761,46 @@
       grid-template-rows: 1fr;
     }
   }
+  .peer-checked\/navbar\:relative {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      position: relative;
+    }
+  }
+  .peer-checked\/navbar\:h-96 {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      height: calc(var(--spacing) * 96);
+    }
+  }
+  .peer-checked\/navbar\:h-100 {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      height: calc(var(--spacing) * 100);
+    }
+  }
+  .peer-checked\/navbar\:h-\[15rem\] {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      height: 15rem;
+    }
+  }
+  .peer-checked\/navbar\:h-\[20rem\] {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      height: 20rem;
+    }
+  }
+  .peer-checked\/navbar\:h-\[25rem\] {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      height: 25rem;
+    }
+  }
+  .peer-checked\/navbar\:h-\[30rem\] {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      height: 30rem;
+    }
+  }
+  .peer-checked\/navbar\:h-\[50rem\] {
+    &:is(:where(.peer\/navbar):checked ~ *) {
+      height: 50rem;
+    }
+  }
   .peer-checked\/navbar\:h-fit {
     &:is(:where(.peer\/navbar):checked ~ *) {
       height: fit-content;
